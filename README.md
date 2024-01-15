@@ -5,10 +5,10 @@
 ## Curriculum
 
 Complete curriculum and chunked code for teaching (starter) JavaScript engineering through game design in the browser. The final code base is **underdesigned but digestible** by beginner students based on the following proficiency levels:
-- [ ] Novice (learning JavaScript syntax and computer science thinking)
+- [ ] Novice (learning syntax and computer science thinking)
 - [x] **Beginner (learning app dev and engineering thinking)**
-- [ ] Competent (learning data management and requirements thinking)
-- [ ] Proficient (learning algorithms and efficiency thinking)
+- [ ] Competent (learning algorithms and paradigm thinking)
+- [ ] Proficient (learning data management and system-wide thinking)
 - [ ] Expert (learning full-stack web dev and best-practices thinking)
 
 ## Requirements
