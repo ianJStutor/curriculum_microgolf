@@ -48,4 +48,4 @@
 1. Consider the ball's position relative to canvas width and height, specifically the ball's center point and radius relative to the <code>{x,y,w,h}</code> properties of the <code>canvas</code> object
 2. If the ball is off the canvas even a little bit, change its position back onto the canvas and change its axis velocity by reversing its sign
 3. Increase life (code uses 250 frames)
-4. Run the animation. Balls will bounce off the canvas walls in a _Pong_-like mannor
+4. Run the animation. Balls will bounce off the canvas walls in a _Pong_-like manner
