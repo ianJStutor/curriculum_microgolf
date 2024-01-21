@@ -15,12 +15,18 @@
 
 ![Pong](https://upload.wikimedia.org/wikipedia/commons/6/62/Pong_Game_Test2.gif)<br><small>From [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Pong_Game_Test2.gif) under the [Creative Commons Attribution 3.0 Unported](https://creativecommons.org/licenses/by/3.0/deed.en) license</small>
 
-1. Describe game and history
-
+1. Designed and programmed by Allan Alcorn in 1972, _Pong_ is often considered THE game that launced the video game industry. The simulated physics system is certainly not realistic, but it's good enough to have been reused frequently because of its efficiency and simplicity
+2. Review animation as repositioning between each drawn frame. The ball's {x,y} center changes every frame by some amount on the x axis and some amount on the y axis. These axis velocities can be negative values
+3. Point out that the ball is a circle with a radius and the "walls" of the screen are lines defined by {x,y} coordinates. Consider how the collision detectin in _Pong_ could work
 
 ### 02 - Lerp and libraries
 
-1. Define algorithm and use cases
+1. For good extensibility, this Pong-ball demo should work for balls of random radii, speeds, and headings. That way, we can test how "robust" the system is
+2. For the purposes of this demo, there will be a minimum ball radius and a maximum ball radius as well as a minimum ball speed and a maximum ball speed. The actual radius and speed will be determined randomly within the min-max range. Consider a value between min and max as a percentage: zero percent is the min value and 100 percent is the max value. 50% would be exactly between the two. Normalized percentages are numbers between zero and one; divide the percentage by 100 so 50% becomes 0.5, for example. Consider using a number line as a visual
+3. Linear interpolation ("lerp") is a simple algorithm that, given a min, max, and a normalized value, can find exactly the correct value in that range--or beyond if the normalized value is less than zero or greater than one
+4. <code>a + (b - a) * t</code>, where <code>a</code> is the minimum, <code>b</code> is the maximum, and <code>t</code> is the normalized value. The range is maximum minus minimum (<code>b - a</code>) and the range translates along the number line by the minimum
+5. Create a new file, <code>lib.js</code>, and export the lerp function. This could be useful in many projects, so we'll keep it in a separate module
+6. In <code>index.js</code>, import the <code>lerp</code> function from <code>lib.js</code>
 
 ### 03 - Ball state and life
 
