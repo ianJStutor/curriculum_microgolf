@@ -24,13 +24,16 @@
 
 1. ball and resetBall()
 2. init() is a new function that calls resetBall()
+3. ball.life short (100 frames) for now because there's no collision detection; ball will fly off canvas right away
 
 ### 04 - Update and draw ball
 
-1. Euler integration
-2. Life timer
+1. Delete testing code from loop()
+2. Euler integration
+3. Life countdown before resetBall()
 
 ### 05 - Wall collision
 
-1. Position detection
+1. Position relative to canvas width and height
 2. Velocity change
+3. Increase life (code uses 250 frames)
