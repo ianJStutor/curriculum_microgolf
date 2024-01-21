@@ -37,12 +37,15 @@
 
 ### 04 - Update and draw ball
 
-1. Delete testing code from loop()
-2. Euler integration
-3. Life countdown before resetBall()
+1. Delete testing code from <code>loop()</code> and add a new section commented as "update"
+2. Point out the life countdown (number of frames) before <code>resetBall()</code>
+3. Review Euler integration, if necessary. The ball's position is changed every frame according to its axis velocities. Don't add the collision detection until the next section
+4. Draw the ball
+5. Run the animation. Balls will fly beyond the edges of the canvas, but that's okay for now since <code>resetBall()</code> is called often enough
 
 ### 05 - Wall collision
 
-1. Position relative to canvas width and height
-2. Velocity change
+1. Consider the ball's position relative to canvas width and height, specifically the ball's center point and radius relative to the <code>{x,y,w,h}</code> properties of the <code>canvas</code> object
+2. If the ball is off the canvas even a little bit, change its position back onto the canvas and change its axis velocity by reversing its sign
 3. Increase life (code uses 250 frames)
+4. Run the animation. Balls will bounce off the canvas walls in a _Pong_-like mannor
