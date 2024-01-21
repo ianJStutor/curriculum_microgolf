@@ -16,6 +16,6 @@
 
 ### 01 - Setup
 
-1. The starter code is available from the link above. Review the lesson and code if necessary.
+1. The starter code is available from the source link above. Review the lesson and code if necessary.
 
-2. In <code>index.html</code>, change the title to something appropriate. Otherwise, the code is unchanged.
+2. In <code>index.html</code>, change the title to something appropriate. Otherwise, the code is unchanged from the source.
