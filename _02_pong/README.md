@@ -13,7 +13,7 @@
 
 ### 01 - Pong
 
-![Pong](https://upload.wikimedia.org/wikipedia/commons/6/62/Pong_Game_Test2.gif)<br><small>From [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Pong_Game_Test2.gif) under the [Creative Commons Attribution 3.0 Unported](https://creativecommons.org/licenses/by/3.0/deed.en) license</small>
+![Pong](https://upload.wikimedia.org/wikipedia/commons/6/62/Pong_Game_Test2.gif)<br><sup>From [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Pong_Game_Test2.gif) under the [Creative Commons Attribution 3.0 Unported](https://creativecommons.org/licenses/by/3.0/deed.en) license</sup>
 
 1. Designed and programmed by Allan Alcorn in 1972, _Pong_ is often considered THE game that launced the video game industry. The simulated physics system is certainly not realistic, but it's good enough to have been reused frequently because of its efficiency and simplicity
 2. Review animation as repositioning between each drawn frame. The ball's {x,y} center changes every frame by some amount on the x axis and some amount on the y axis. These axis velocities can be negative values
@@ -30,9 +30,10 @@
 
 ### 03 - Ball state and life
 
-1. ball and resetBall()
-2. init() is a new function that calls resetBall()
-3. ball.life short (100 frames) for now because there's no collision detection; ball will fly off canvas right away
+1. In <code>index.js</code>, new section commented as "ball state" that contains the <code>ball</code> object and the <code>resetBall</code> function
+2. In the "init" section, <code>init</code> is a new function that calls <code>resetBall()</code> before starting the animation loop. This means <code>ball</code> will be populated with properties right away
+3. In <code>resetBall()</code>, the <code>ball</code> object's position is set to the center of the canvas, and <code>lerp()</code> is used to define an angle (in radians) and speed. The polar-to-cartesian algorithm is used to define axis velocities. (Review of Euler integration might be necessary.) <code>lerp()</code> is then used to define a radius, then color and life are defined
+3. The <code>ball.life</code> property should be short for now (e.g., 100 frames) because there's no collision detection; the ball will fly off canvas right away
 
 ### 04 - Update and draw ball
 
