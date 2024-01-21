@@ -13,6 +13,8 @@
 
 ### 01 - Pong
 
+<figure>![Pong](https://upload.wikimedia.org/wikipedia/commons/6/62/Pong_Game_Test2.gif)<figcaption><small>[Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Pong_Game_Test2.gif) under the [Creative Commons Attribution 3.0 Unported](https://creativecommons.org/licenses/by/3.0/deed.en) license</small></figcaption></figure>
+
 1. Describe game and history
 
 
