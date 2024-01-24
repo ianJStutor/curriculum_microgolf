@@ -10,7 +10,7 @@
 
 ## Source
 
-[Canvas Starter (beginner)](https://github.com/ianJStutor/curriculum_canvas_starter/beginner)
+[Canvas starter (beginner)]([https://github.com/ianJStutor/curriculum_canvas_starter/beginner](https://github.com/ianJStutor/curriculum_canvas_starter/tree/2058a91f56d9c58894458c6c7cf805d06eae0aa0/beginner))
 
 ## Lesson notes
 
